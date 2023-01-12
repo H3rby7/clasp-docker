@@ -5,8 +5,10 @@ services:
       context: .
       dockerfile: Clasp.dockerfile
     entrypoint: /bin/bash
+    working_dir: /app
     tty: true
     ports: 
       - "8080:8080"
     volumes:
       - "./config:/home/node"
+      - "./app:/app"
