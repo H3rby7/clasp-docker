@@ -1,0 +1,9 @@
+version: "3"
+services:
+  clasp:
+    build:
+      context: .
+      dockerfile: Clasp.dockerfile
+    entrypoint: clasp login
+    ports: 
+      - "8080:8080"
