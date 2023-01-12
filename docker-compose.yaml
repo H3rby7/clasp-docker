@@ -7,3 +7,5 @@ services:
     entrypoint: clasp login
     ports: 
       - "8080:8080"
+    volumes:
+      - "./config:/home/node"
